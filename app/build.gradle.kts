@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -64,6 +65,16 @@ dependencies {
 
     // Kotlinx serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0")
+
+    // Plateforme Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
+
+    // Authentification par email/mot de passe
+    implementation("com.google.firebase:firebase-auth-ktx")
+
+    // Base de données Firestore (pour stocker profils, RDV, etc.)
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
 
 
     implementation(libs.androidx.core.ktx)
