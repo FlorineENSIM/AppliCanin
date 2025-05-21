@@ -41,6 +41,31 @@ android {
 
 dependencies {
 
+    val navVersion = "2.8.9"
+
+    // Navigation Compose
+    implementation("androidx.navigation:navigation-compose:$navVersion")
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
+
+    // Icons Material (utile pour une UI propre et intuitive)
+    implementation("androidx.compose.material:material-icons-extended:1.7.8")
+
+    // Retrofit pour les appels réseau à ton futur backend
+    implementation("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0")
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+
+    // Coil pour charger les images (profil du chien, etc.)
+    implementation("io.coil-kt:coil-compose:2.7.0")
+
+    // Kotlinx serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0")
+
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -56,4 +81,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
 }
