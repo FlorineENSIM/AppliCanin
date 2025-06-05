@@ -1,16 +1,15 @@
 package com.example.applicationcanin.ui.components
 
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.ui.graphics.Shape
 import com.example.applicationcanin.ui.theme.ColorText
 import com.example.applicationcanin.ui.theme.fondBloc
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.shape.CornerBasedShape
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -19,7 +18,7 @@ fun MainButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    shape: Shape = MaterialTheme.shapes.small
+    shape: CornerBasedShape = MaterialTheme.shapes.small
 ) {
     Button(
         onClick = onClick,

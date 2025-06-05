@@ -75,6 +75,14 @@ dependencies {
     // Base de données Firestore (pour stocker profils, RDV, etc.)
     implementation("com.google.firebase:firebase-firestore-ktx")
 
+    implementation("androidx.activity:activity-compose:1.9.0")
+    implementation("com.google.firebase:firebase-storage-ktx")
+    implementation("io.coil-kt:coil-compose:2.5.0")
+
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+
+
+
 
 
     implementation(libs.androidx.core.ktx)
